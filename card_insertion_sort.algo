@@ -19,7 +19,7 @@ PROCEDURE swap(var x,y:INTEGER )
        FOR i FROM 1 TO arr.length-1 STEP 1  DO
            key:=arr[i]
            j:=i-1;
-           WHILE (j>0 or key<arr[j]) DO
+           WHILE (j>=0 or key<arr[j]) DO
                swap(key,arr[j]);
                j:=j-1;
            END_WHILE
